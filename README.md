@@ -13,19 +13,15 @@
 - 🛒 **Full cart & checkout system** with delivery scheduling and payment options  
 - 🔍 **Product filters**, search bar, and **sliding offer cards**  
 - 🌟 **User account system** with Gmail login, OTP verification & magical transitions  
-- 💬 **Recently viewed products** & **motivational quote slideshows**  
-- 📊 **Monthly planner** to track completed tasks and goal achievement
--![Screenshot 2025-05-01 031318](https://github.com/user-attachments/assets/291f1e46-b384-4049-8343-fae0fa61b21b)
-
 
 
 ---
 
 ## 🧰 **Tech Stack**
 
-- **Frontend**: HTML5, CSS3 (Tailwind/Bootstrap), JavaScript  
-- **Backend**: Node.js, Express.js *(if applicable)*  
-- **Database**: MongoDB / MySQL *(based on your choice)*  
+- **Frontend**: HTML5, CSS(Bootstrap), JavaScript  
+- **Backend**: Node.js, Express.js 
+- **Database**: MongoDB / MySQL 
 - **Animations**: CSS transitions, JavaScript for sliding cards & interactivity  
 - **Authentication**: Gmail Login + OTP validation  
 
