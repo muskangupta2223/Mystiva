@@ -25,16 +25,6 @@
 - **Animations**: CSS transitions, JavaScript for sliding cards & interactivity  
 - **Authentication**: Gmail Login + OTP validation  
 
----
-
-
-## 📸 **Screenshots**  
-![Screenshot 2025-05-01 025746](https://github.com/user-attachments/assets/e06eefc9-ffe4-483d-a5ee-7c4608eea5e9)
-![Screenshot 2025-05-01 031329](https://github.com/user-attachments/assets/202e0ca8-947e-4855-8f8b-e19882b6f785)
-
-![Screenshot 2025-05-01 030432](https://github.com/user-attachments/assets/1eb45f63-e40c-4328-96a1-34c050d0bb34)
-![Screenshot 2025-05-01 030515](https://github.com/user-attachments/assets/f51b531f-4972-46a8-90ff-e8d61b4bb06f)
-
 
 ---
 
