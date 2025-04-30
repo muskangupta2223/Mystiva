@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | YourGiftStore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            background: #f8f9fa;
+        }
+        .navbar-brand {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .navbar-gradient {
+      background: linear-gradient(to right, #fdf5f8, #fff1f5);
+    }
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fff;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+    
+        .login-image {
+            background: url('https://static.vecteezy.com/system/resources/previews/051/182/446/non_2x/smartphone-magnifier-login-page-examining-security-vector.jpg') no-repeat center center/cover;
+            min-height: 300%;
+        }
+        .login-form {
+            padding: 40px;
+        }
+        .form-control {
+            border-radius: 10px;
+        }
+        .btn-primary {
+    border-radius: 10px;
+    background-color: #c93c6b;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a12047;
+}
+        .forgot {
+            font-size: 0.9rem;
+        }
+        .signup-link {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-gradient sticky-top shadow-lg py-1">
+    <div class="container">
+      <a class="navbar-brand fs-1 text-danger" href="home.html">Mystiva</a>
+      <button class="navbar-toggler text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="product.html">Create Hamper</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="signup.html">Signup</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container main-container mt-5">
+    <div class="row login-container">
+        <div class="col-md-6 d-none d-md-block login-image"><img src="login.jpg" width="100%" alt=""></div>
+        <div class="col-md-6 d-flex align-items-center">
+            <div class="login-form w-100">
+                <h2 class="mb-4 fw-bold text-center">Welcome Back! 🎁</h2>
+                <p class="text-muted text-center mb-5">Login to continue spreading love and smiles.</p>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label fw-semibold">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                            <input type="checkbox" id="remember">
+                            <label for="remember" class="ms-1 small">Remember me</label>
+                        </div>
+                        <div class="forgot">
+                            <a href="underConstruction.html" class="text-decoration-none text-primary">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary py-2">Login</button>
+                    </div>
+
+                    <p class="text-center text-muted mt-4 signup-link">
+                        Don't have an account? <a href="signup.html" class="text-primary text-decoration-none">Sign up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

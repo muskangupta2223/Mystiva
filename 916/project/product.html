@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love & Premium Gifts - Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      background: #f9f9f9;
+font-family: 'Dancing Script', cursive;
+
+    }
+    .navbar {
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(255, 63, 63, 0.656);
+      font-family:'Times New Roman', Times, serif;
+      }
+
+    .navbar-brand {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .navbar-gradient {
+      background: linear-gradient(to right, #fdf5f8, #fff1f5);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: #ff6b81;
+    }
+    .nav-link {
+      color: #a33434 !important;
+      font-weight: 500;
+    }
+    .sidebar {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 100px;
+      font-family:'Times New Roman', Times, serif;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: all 0.3s;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .price {
+      color: #ff6b81;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .rating {
+      color: #ffc107;
+    }
+    .btn-cart {
+      background: #ff6b81;
+      color: white;
+      border: none;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .btn-cart:hover {
+      background: #e05a6e;
+    }
+    .wishlist-btn {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      font-size: 1.5rem;
+      color: #ff6b81;
+    }
+    .wishlist-btn:hover {
+      color: #e05a6e;
+    }
+  </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-md navbar-gradient sticky-top shadow-lg py-2">
+    <div class="container">
+      <a class="navbar-brand fs-1 text-danger" href="home.html">Mystiva</a>
+      <button class="navbar-toggler text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="product.html">Create Hamper</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="signup.html">Signup</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container mt-5">
+  <div class="row g-4">
+    
+    <div class="col-lg-3">
+      <div class="sidebar">
+        <h5>Filters</h5>
+        <hr>
+        <h6>Price</h6>
+        <input type="range" min="0" max="5000" step="100" value="0" class="form-range" id="priceRange" oninput="updatePrice()">
+        <p id="priceValue">Up to $0</p>
+
+        <h6 class="mt-4">Categories</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="romantic">
+          <label class="form-check-label" for="romantic">
+            Romantic
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="selfcare">
+          <label class="form-check-label" for="selfcare">
+            Self-Care
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="family">
+          <label class="form-check-label" for="family">
+            Family
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-9">
+      <div class="row g-4" id="productGrid">
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://lepure.in/cdn/shop/products/uhb2.jpg?v=1664198747" alt="Chocolate">
+            <div class="card-body text-center">
+              <h5 class="card-title">Premium Chocolate Hamper</h5>
+              <p class="price">$49</p>
+              <div class="rating">
+                ★★★★☆
+              </div>
+              <button class="btn btn-cart" onclick="addToCart('Premium Chocolate Hamper')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://betweenboxes.in/cdn/shop/products/Screenshot2022-07-04at7.50.25AM.png?v=1717142179" alt="Ring">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bride To Be Hamper</h5>
+              <p class="price">$199</p>
+              <div class="rating">
+                ★★★★★
+              </div>
+              <button class="btn btn-cart" onclick="addToCart('Bride To Be Hamper')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images-cdn.ubuy.co.in/66945165178d13780974526f-baby-39-s-first-teddy-new-baby-gift.jpg" alt="Gift Combo">
+            <div class="card-body text-center">
+              <h5 class="card-title"> New Member Hamper</h5>
+              <p class="price">$79</p>
+              <div class="rating">
+                ★★★★☆
+              </div>
+              <button class="btn btn-cart" onclick="addToCart(' New Member Hamper')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/ghk040125evergreenindexes-gifts-for-women-67fd26c588c9e.jpg?crop=0.668xw:1.00xh;0.159xw,0&resize=640:*" alt="Gift Combo">
+            <div class="card-body text-center">
+              <h5 class="card-title">Hamper for Her</h5>
+              <p class="price">$79</p>
+              <div class="rating">
+                ★★★☆☆
+              </div>
+              <button class="btn btn-cart" onclick="addToCart('for Her')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/4/CH/EQ/HC/31008867/img-0720.jpg" alt="Gift Combo">
+            <div class="card-body text-center">
+              <h5 class="card-title">Personalized Hamper for Mothers</h5>
+              <p class="price">$79</p>
+              <div class="rating">
+                ★★★★☆
+              </div>
+              <button class="btn btn-cart" onclick="addToCart('Personalized Hamper for Mothers')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://www.happygifts.in/storage/bundles/7BBtzg7lquJ5VW1zgpOR5R2vnJnnVH4nBZcJksAo.jpg" alt="Gift Combo">
+            <div class="card-body text-center">
+              <h5 class="card-title"> Hamper for Him</h5>
+              <p class="price">$79</p>
+              <div class="rating">
+                ★★★★☆
+              </div>
+              <button class="btn btn-cart" onclick="addToCart('for Him')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="images/serum.jpg" alt="Gift Combo">
+            <div class="card-body text-center">
+              <h5 class="card-title">Self-Care Hamper</h5>
+              <p class="price">$79</p>
+              <div class="rating">
+                ★★★★★
+              </div>
+              <button class="btn btn-cart" onclick="addToCart('Self-Care Hamper')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://beyondhampers.com/cdn/shop/files/I_am_sorry_hamper_001.heic?v=1725076730" alt="Gift Combo">
+            <div class="card-body text-center">
+              <h5 class="card-title">Apology Hamper</h5>
+              <p class="price">$79</p>
+              <div class="rating">
+                ★★★★★
+              </div>
+              <button class="btn btn-cart" onclick="addToCart('Apology Hamper')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card position-relative">
+            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://www.fluorescentstudios.in/cdn/shop/products/PeriodPamper_1_1.png?v=1671974475" alt="Gift Combo">
+            <div class="card-body text-center">
+              <h5 class="card-title">Hamper for her tough days</h5>
+              <p class="price">$69</p>
+              <div class="rating">
+                ★★★☆☆
+              </div>
+              <button class="btn btn-cart" onclick="addToCart('Hamper for her tough days')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function updatePrice() {
+    const value = document.getElementById('priceRange').value;
+    document.getElementById('priceValue').innerText = `Up to $${value}`;
+  }
+
+  function addToCart(productName) {
+    alert(productName + ' added to cart!');
+  }
+</script>
+
+</body>
+</html>

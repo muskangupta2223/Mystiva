@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Love & Luxury Gifts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+        .navbar-brand {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .navbar-gradient {
+      background: linear-gradient(to right, #fdf5f8, #fff1f5);
+    }
+    body {
+      background-color: #fffafa;
+      font-family: 'Poppins', sans-serif;
+      color: #4b4b4b;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .section-title {
+      font-weight: 700;
+      color: #c7367c;
+      letter-spacing: 0.5px;
+      font-family: 'Great Vibes', cursive;
+    }
+  
+    .section-title {
+      font-size: 3rem;
+    }
+    .hero {
+      background: linear-gradient(to right, #ffe6f0, #fff1f6);
+      padding: 120px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 20px auto 0;
+      color: #6e6e6e;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 60px;
+      height: 5px;
+      background: #d63384;
+      border-radius: 10px;
+      transform: translateX(-50%);
+    }
+    .card {
+      border: none;
+      border-radius: 1.2rem;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: all 0.4s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+    .promise {
+      background: #fff0f5;
+      border-radius: 1.2rem;
+      padding: 80px 20px;
+      margin-top: 50px;
+    }
+    .footer-cta {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      border-radius: 1.2rem;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+      margin-top: 80px;
+    }
+    .btn-custom {
+      background: #fff;
+      color: #d63384;
+      padding: 12px 30px;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: 0.4s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .btn-custom:hover {
+      background: #d63384;
+      color: white;
+      box-shadow: 0 6px 20px rgba(214, 51, 132, 0.4);
+    }
+
+    .counter {
+      font-size: 2.5rem;
+      color: #d63384;
+      font-weight: bold;
+    }
+    .counter-text {
+      font-size: 1rem;
+      color: #777;
+    }
+    .promise-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    min-height: 280px;
+    cursor: pointer;
+  }
+  .promise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(214, 51, 132, 0.3);
+  }
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #ffd6e7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d63384;
+  }
+  .section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  </style>
+</head>
+
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-gradient sticky-top shadow-lg py-2">
+    <div class="container">
+      <a class="navbar-brand fs-1 text-danger" href="home.html">Mystiva</a>
+      <button class="navbar-toggler text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="product.html">Create Hamper</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="signup.html">Signup</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container" data-aos="fade-down">
+      <h1 class="section-title">About Us 💖</h1>
+      <p class="lead mt-4">At <span class="highlight">Mystiva</span>, we create premium, love-inspired gifts to turn every moment into a memory worth cherishing.</p>
+    </div>
+  </section>
+
+  <!-- What Makes Us Different -->
+  <section class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-5 section-title">What Makes Us Different?</h2>
+      <div class="row g-5">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center p-4">
+            <div class="fs-1 mb-3">🌹</div>
+            <h5>Curated With Love</h5>
+            <p>Carefully selected gifts to celebrate every story of love.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center p-4">
+            <div class="fs-1 mb-3">💎</div>
+            <h5>Luxury You Can Feel</h5>
+            <p>Crafted with passion, delivered with elegance.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center p-4">
+            <div class="fs-1 mb-3">✨</div>
+            <h5>Modern Experience</h5>
+            <p>Seamless, stylish shopping for your special moments.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center p-4">
+            <div class="fs-1 mb-3">🌍</div>
+            <h5>For Every Kind of Love</h5>
+            <p>Celebrating love in all its beautiful forms across the globe.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Section -->
+<section class="py-5" style="background: #fff0f5;">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center g-5">
+
+      <!-- Founder Image -->
+      <div class="col-md-5 text-center">
+        <img src="images/IMG-20240820-WA0007.jpg" width="500px" alt="Founder Muskan Kumari" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
+      </div>
+
+      <!-- Founder Info -->
+      <div class="col-md-7">
+        <h2 class="section-title mb-3">Meet Our Founder 💖</h2>
+        <h4 class="mb-2" style="color: #d63384;">Muskan Kumari</h4>
+        <p class="lead" style="color: #777;">BCA Student at Lovely Professional University (LPU)</p>
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          A passionate Computer Science student with a heart full of dreams and a mind full of ideas. Muskan founded Mystiva with the vision to spread love, luxury, and happiness through beautifully curated gifts. 
+          Her dedication to quality, innovation, and heartfelt connections drives everything we do.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          As a young entrepreneur, Muskan is committed to turning every gift into a story, every customer into family, and every moment into magic. 🚀✨
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Counters -->
+  <section class="my-5 text-center" data-aos="fade-up">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="counter" id="counter1">0</div>
+          <div class="counter-text">Gifts Delivered</div>
+        </div>
+        <div class="col-md-4">
+          <div class="counter" id="counter2">0</div>
+          <div class="counter-text">Happy Customers</div>
+        </div>
+        <div class="col-md-4">
+          <div class="counter" id="counter3">0</div>
+          <div class="counter-text">Love Stories Created</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Our Promise Section - Using Bootstrap Icons -->
+<section class="promise py-5" style="background: linear-gradient(to right, #fff0f5, #ffe4e1);">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title mb-5 text-center" style="color: #d63384;">Our Promise to You 💖</h2>
+
+    <div class="row g-5 justify-content-center">
+
+      <!-- Single Card -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="promise-card p-4 text-center shadow-lg">
+          <div class="icon-circle mb-3 mx-auto">
+            <i class="bi bi-gem" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Premium Quality</h5>
+          <p class="small text-muted">Exquisite craftsmanship and top-notch materials in every gift.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="promise-card p-4 text-center shadow-lg">
+          <div class="icon-circle mb-3 mx-auto">
+            <i class="bi bi-box-seam" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Thoughtful Packaging</h5>
+          <p class="small text-muted">Every package tells a story before it's even opened.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="promise-card p-4 text-center shadow-lg">
+          <div class="icon-circle mb-3 mx-auto">
+            <i class="bi bi-truck" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Fast Delivery</h5>
+          <p class="small text-muted">Swift, secure deliveries to keep surprises intact.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+        <div class="promise-card p-4 text-center shadow-lg">
+          <div class="icon-circle mb-3 mx-auto">
+            <i class="bi bi-heart-fill" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Caring Support</h5>
+          <p class="small text-muted">Our support team is here with heart and hustle, always.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <section class="footer-cta" data-aos="fade-up">
+    <div class="container">
+      <h2 class="mb-4">Join Our Story</h2>
+      <p class="lead mb-4">Every gift tells a story. Every love writes a chapter. Let’s create yours, beautifully. ✨</p>
+      <a href="product.html" class="btn btn-custom btn-lg">Explore Gifts</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation Library JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target') || 1000;
+        const c = +counter.innerText;
+        const increment = target / 200;
+        if (c < target) {
+          counter.innerText = Math.ceil(c + increment);
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = target;
+        }
+      }
+      counter.setAttribute('data-target', Math.floor(Math.random() * 5000 + 1000));
+      updateCounter();
+    });
+  </script>
+
+</body>
+</html>
